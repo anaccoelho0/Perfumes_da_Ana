@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfumes Femininos - Perfumaria da Ana</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="image icon" type="image/x-icon" href="assets/img/Logo.png" width="200px">
+</head>
+
+<body>
+  <!-- INÍCIO BANNER/NAVBAR -->
+  <div class="banner">
+    <div class="container">
+      <div class="navebar">
+        <div class="logo">
+          <img src="assets/img/Logo.png" alt="Logo Perfumaria da Ana" width="125px" />
+        </div>
+
+        <nav>
+          <ul id="MenuItens">
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+              <a href="#">Produtos</a>
+              <ul class="submenu">
+                <li><a href="perfumesfemininos.html">Perfumes Femininos</a></li>
+                <li><a href="perfumesmasculinos.html" title="Perfumes Masculinos">Perfumes Masculinos</a></li>
+              </ul>
+            </li>
+            <li><a href="sobrenos.html" title="Sobre Nós">Sobre Nós</a></li>
+            <li class="dropdown">
+              <a href="#">Minha Conta</a>
+              <ul class="submenu">
+                <li><a href="criarconta.html">Criar Conta</a></li>
+                <li><a href="iniciarsessao.html">Iniciar Sessão</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a href="meucarrinho.html">
+          <img src="assets/img/carrinho.svg" alt="Carrinho" width="30px" height="30px" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- FIM NAVBAR -->
+
+  <!-- INÍCIO PRODUTOS FEMININOS -->
+  <section class="produtos-destaque">
+    <div class="container">
+      <h2 class="titulo">Perfumes Femininos</h2>
+      <div class="linha">
+
+        <!-- Produto 1 -->
+        <div class="col-4">
+          <a href="claramagnific.html">
+            <img src="assets/img/produto-1.png" alt="Clara Magnifiq" />
+          </a>
+          <h4>Clara Magnifiq</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Notas doces com toque de baunilha e frutas vermelhas.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Clara Magnifiq', 149.99)">Comprar</button>
+        </div>
+
+
+        <!-- Produto 2 -->
+        <div class="col-4">
+          <a href="produto2.html">
+            <img src="assets/img/produto-2.png" alt="Clara Scente" />
+          </a>
+          <h4>Clara Scente</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Fragrância floral refinada com rosa e lírio.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Clara Scente', 149.99)">Comprar</button>
+        </div>
+
+
+        <!-- Produto 3 -->
+        <div class="col-4">
+          <a href="produto3.html">
+            <img src="assets/img/produto-3.png" alt="Perfume Brisa Suave" />
+          </a>
+          <h4>Anflora</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Frescor solar de flor de laranjeira.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Anflora', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col-4">
+          <a href="produto4.html">
+            <img src="assets/img/produto-4.png" alt="Perfume Clara Scente 2" />
+          </a>
+          <h4>Clara Scente 2</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Mistura elegante de jasmim e âmbar.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Clara Scente 2', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="col-4">
+          <a href="produto5.html">
+            <img src="assets/img/produto-5.png" alt="Perfume Anflora 2" />
+          </a>
+          <h4>Anflora 2</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Frescor envolvente de flores brancas com toque de madeira suave.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Anflora 2', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col-4">
+          <a href="produto6.html">
+            <img src="assets/img/produto-6.png" alt="Perfume Essenza Clara" />
+          </a>
+          <h4>Essenza Clara</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Frescor cítrico com flores e madeira suave.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Essenza Clara', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="col-4">
+          <a href="produto7.html">
+            <img src="assets/img/produto-7.png" alt="Perfume Ana Sublime" />
+          </a>
+          <h4>Ana Sublime</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Jasmim, pêssego e baunilha em um abraço sedutor.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Sublime', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="col-4">
+          <a href="produto8.html">
+            <img src="assets/img/produto-8.png" alt="Perfume Ana Luar" />
+          </a>
+          <h4>Ana Luar</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Mistura de flores noturnas e âmbar acolhedor.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Luar', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 9 -->
+        <div class="col-4">
+          <a href="produto9.html">
+            <img src="assets/img/produto-9.png" alt="Perfume L'noeud" />
+          </a>
+          <h4>L’Noeud</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Rosas, violetas e sândalo em uma elegância.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('LNoeud', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 10 -->
+        <div class="col-4">
+          <a href="produto10.html">
+            <img src="assets/img/produto-10.png" alt="Perfume Ana Sublime" />
+          </a>
+          <h4>Clara Diamant</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Bergamota, pimenta rosa e lírios brilhantes.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Clara Diamant', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 12 -->
+        <div class="col-4">
+          <a href="produto11.html">
+            <img src="assets/img/produto-12.png" alt="Perfume Ana Ocean" />
+          </a>
+          <h4>Ana Ocean</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Aroma marinho com frescor verde e salgado.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Ocean', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 11 -->
+        <div class="col-4">
+          <a href="produto12.html">
+            <img src="assets/img/produto-11.png" alt="Perfume Clara Ondine" />
+          </a>
+          <h4>Clara Ondine</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Doçura aquática de melão e flor de lótus.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Clara Ondine', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 13 -->
+        <div class="col-4">
+          <a href="produto13.html">
+            <img src="assets/img/produto-13.png" alt="Perfume Ana Verdejant" />
+          </a>
+          <h4>Ana Verdejant</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Verdejante como um jardim após a chuva.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Verdejant', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 14 -->
+        <div class="col-4">
+          <a href="produto14.html">
+            <img src="assets/img/produto-14.png" alt="Perfume Ana Áurea" />
+          </a>
+          <h4>Ana Áurea</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Flor de laranjeira, mel e calor de âmbar.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Áurea', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Produto 15 -->
+        <div class="col-4">
+          <a href="produto15.html">
+            <img src="assets/img/produto-15.png" alt="Perfume Ana Sublime" />
+          </a>
+          <h4>Ana Étoile</h4>
+          <p>R$ 149,99</p>
+          <p class="descricao">Frutas vermelhas e flor de cerejeira com toque aveludado.</p>
+          <div class="classificacao">
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9733;</icon-icon>
+            <icon-icon name="star">&#9734;</icon-icon>
+          </div>
+          <button class="btn-comprar" onclick="adicionarAoCarrinho('Ana Étoile', 149.99)">Comprar</button>
+        </div>
+
+        <!-- Início do Rodapé -->
+        <footer class="rodape">
+          <div class="rodape__redes">
+            <a href="https://web.whatsapp.com/" target="_blank" class="rodape__link rodape__link--whatsapp"
+              title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="rodape__link rodape__link--instagram"
+              title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="rodape__link rodape__link--facebook"
+              title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </section>
+  <!-- FIM PRODUTOS -->
+
+  <script src="assets/js/carrinho.js"></script>
+</body>
+
+</html>

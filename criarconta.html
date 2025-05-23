@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Conta - Perfumaria da Ana</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="image icon" type="image/x-icon" href="assets/img/Logo.png" width="200px">
+</head>
+
+<body>
+  <header class="banner">
+    <div class="container">
+      <div class="navebar">
+        <div class="logo">
+          <img src="assets/img/Logo.png" alt="Logo da Perfumaria da Ana" width="125px" />
+        </div>
+        <nav>
+          <ul id="MenuItens">
+            <li><a href="index.html" title="Início">Início</a></li>
+            <li class="dropdown">
+              <a href="#" title="Produtos">Produtos</a>
+              <ul class="submenu">
+                <li><a href="perfumesfemininos.html" title="Perfumes Femininos">Perfumes Femininos</a></li>
+                <li><a href="perfumesmasculinos.html" title="Perfumes Masculinos">Perfumes Masculinos</a></li>
+              </ul>
+            </li>
+            <li><a href="sobrenos.html" title="Sobre Nós">Sobre Nós</a></li>
+            <li class="dropdown">
+              <a href="#" title="Minha Conta">Minha Conta</a>
+              <ul class="submenu">
+                <li><a href="criarconta.html" title="Criar Conta">Criar uma Conta</a></li>
+                <li><a href="iniciarsessao.html" title="Iniciar Sessão">Iniciar Sessão</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a href="meucarrinho.html">
+          <img src="assets/img/carrinho.svg" alt="Carrinho de compras" width="30px" height="30px" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- FORMULÁRIO DE CRIAÇÃO DE CONTA -->
+  <section class="form-container">
+    <h2>Criar uma Conta</h2>
+    <form action="#" method="post">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <input type="tel" name="telefone" placeholder="Telefone" required />
+      <input type="password" name="senha" placeholder="Senha" required />
+      <input type="password" name="confirmarSenha" placeholder="Confirmar senha" required />
+      <button type="submit">Criar Conta</button>
+    </form>
+    <p class="sugestao-login">
+      Já possui uma conta? <a href="iniciarsessao.html">Iniciar sessão</a>
+    </p>
+  </section>
+</body>
+
+</html>

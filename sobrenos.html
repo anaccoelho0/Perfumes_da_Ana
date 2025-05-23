@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós - Perfumaria da Ana</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo.png" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fffaf7;
+            color: #333;
+        }
+
+        .sobre-nos {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .sobre-nos h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #8b4513;
+            margin-bottom: 20px;
+        }
+
+        .sobre-nos p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .missao-valores {
+            margin-top: 40px;
+            background-color: #fff0e6;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .missao-valores h2 {
+            color: #a0522d;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .contato {
+            margin-top: 50px;
+            background-color: #fdf4ed;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contato h2 {
+            color: #a0522d;
+            font-size: 28px;
+        }
+
+        .contato p {
+            font-size: 17px;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <div class="navebar">
+        <div class="logo">
+            <img src="assets/img/Logo.png" alt="Logo Perfumaria da Ana" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItens">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <ul class="submenu">
+                        <li><a href="perfumesfemininos.html">Perfumes Femininos</a></li>
+                        <li><a href="perfumesmasculinos.html">Perfumes Masculinos</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobrenos.html" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="dropdown">
+                    <a href="#">Minha Conta</a>
+                    <ul class="submenu">
+                        <li><a href="criarconta.html">Criar Conta</a></li>
+                        <li><a href="iniciarsessao.html">Iniciar Sessão</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="meucarrinho.html">
+            <img src="assets/img/carrinho.svg" alt="Carrinho" width="30px" height="30px" />
+        </a>
+    </div>
+    <!-- Fim da Navegação -->
+
+    <!-- Conteúdo Sobre Nós -->
+    <section class="sobre-nos">
+        <h1>Sobre a Perfumaria da Ana</h1>
+        <p>A <strong>Perfumaria da Ana</strong> é mais do que uma loja — é um universo de fragrâncias cuidadosamente
+            selecionadas que inspiram beleza, confiança e autenticidade. Fundada com o propósito de oferecer produtos
+            que marcam momentos especiais, nossa loja reúne o melhor da perfumaria feminina e masculina.</p>
+
+        <p>Com atendimento próximo, produtos de qualidade e uma experiência única, buscamos encantar nossos clientes
+            desde o primeiro clique até o recebimento do pedido. Nosso compromisso é com o bem-estar, elegância e
+            autoestima de cada pessoa que confia em nossa marca.</p>
+
+        <!-- Missão, Visão e Valores -->
+        <div class="missao-valores">
+            <h2>Nossa Missão</h2>
+            <p>Encantar os clientes com perfumes de qualidade, oferecendo uma experiência de compra acolhedora, prática
+                e sofisticada.</p>
+
+            <h2>Nossa Visão</h2>
+            <p>Ser referência nacional no segmento de perfumaria online, destacando-se pela excelência no atendimento e
+                curadoria de fragrâncias.</p>
+
+            <h2>Nossos Valores</h2>
+            <ul>
+                <li>✨ Qualidade em cada detalhe</li>
+                <li>❤️ Respeito ao cliente</li>
+                <li>🌿 Sustentabilidade e ética</li>
+                <li>🎯 Comprometimento com resultados</li>
+                <li>🤝 Transparência e confiança</li>
+            </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="contato">
+            <h2>Fale Conosco</h2>
+            <p><i class="fas fa-envelope"></i> E-mail: atendimento@perfumariadaana.com.br</p>
+            <p><i class="fas fa-phone"></i> WhatsApp: (75) 99289-8551</p>
+            <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua das Rosas, 123 - Centro, Feira de Santana - BA</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape__redes">
+            <a href="https://web.whatsapp.com/" target="_blank" class="rodape__link rodape__link--whatsapp"
+                title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="rodape__link rodape__link--instagram"
+                title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="rodape__link rodape__link--facebook"
+                title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

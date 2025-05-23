@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfumes Masculinos - Perfumaria da Ana</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/produtos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="image icon" type="image/x-icon" href="assets/img/Logo.png" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navebar">
+        <div class="logo">
+            <img src="assets/img/Logo.png" alt="Logo Perfumaria da Ana" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItens">
+                <li><a href="index.html" title="Início">Início</a></li>
+                <li class="dropdown">
+                    <a href="#" title="Produtos">Produtos</a>
+                    <ul class="submenu">
+                        <li><a href="perfumesfemininos.html" title="Perfumes Femininos">Perfumes Femininos</a></li>
+                        <li><a href="perfumesmasculinos.html" title="Perfumes Masculinos">Perfumes Masculinos</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobrenos.html" title="Sobre Nós">Sobre Nós</a></li>
+                <li class="dropdown">
+                    <a href="#" title="Minha Conta">Minha Conta</a>
+                    <ul class="submenu">
+                        <li><a href="criarconta.html" title="Criar Conta">Criar Conta</a></li>
+                        <li><a href="iniciarsessao.html" title="Iniciar Sessão">Iniciar Sessão</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="meucarrinho.html">
+            <img src="assets/img/carrinho.svg" alt="Carrinho" width="30px" height="30px" />
+        </a>
+    </div>
+
+    <!-- PRODUTOS MASCULINOS -->
+    <section class="produtos-destaque">
+        <div class="container">
+            <h2 class="titulo">Perfumes Masculinos</h2>
+            <div class="linha">
+
+                <div class="col-4">
+                    <img src="assets/img/noirvertice.png" alt="Noir Vertice" />
+                    <h4>Noir Vertice</h4>
+                    <p>R$ 159,99</p>
+                    <p class="descricao">Notas amadeiradas com toques de especiarias.</p>
+                    <div class="classificacao">
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9734;</icon-icon>
+                    </div>
+                    <button class="btn-comprar" onclick="adicionarAoCarrinho('Essence Homme', 129.99)">Comprar</button>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/img/essencehomme.png" alt="Essence Homme" />
+                    <h4>Essence Homme</h4>
+                    <p>R$ 139,99</p>
+                    <p class="descricao">Intensidade e frescor em uma fragrância.</p>
+                    <div class="classificacao">
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9734;</icon-icon>
+                        <icon-icon name="star">&#9734;</icon-icon>
+                    </div>
+                    <button class="btn-comprar" onclick="adicionarAoCarrinho('Black Force', 139.99)">Comprar</button>
+                </div>
+
+
+                <div class="col-4">
+                    <img src="assets/img/blackforce.png" alt="Essence Homme" />
+                    <h4>Black Force</h4>
+                    <p>R$ 139,99</p>
+                    <p class="descricao">Notas de couro, âmbar e noz-moscada.</p>
+                    <div class="classificacao">
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9733;</icon-icon>
+                        <icon-icon name="star">&#9734;</icon-icon>
+                        <icon-icon name="star">&#9734;</icon-icon>
+                    </div>
+                    <button class="btn-comprar" onclick="adicionarAoCarrinho('Black Force', 139.99)">Comprar</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="rodape__redes">
+            <a href="https://web.whatsapp.com/" target="_blank" class="rodape__link rodape__link--whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="rodape__link rodape__link--instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="rodape__link rodape__link--facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+
+</html>

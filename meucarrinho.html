@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Carrinho - Perfumaria da Ana</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.5em;
+      color: ##5a3e36;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .produto {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .produto:last-child {
+      border-bottom: none;
+    }
+
+    .produto p {
+      margin: 5px 0;
+      font-size: 1em;
+    }
+
+    #total {
+      font-size: 1.3em;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+      color: #000;
+    }
+
+    .btn {
+      background-color: #d63384;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+    }
+
+    .btn:hover {
+      background-color: #b0256b;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Meu Carrinho</h2>
+    <div id="carrinho-itens"></div>
+    <p id="total"></p>
+    <button class="btn" onclick="limparCarrinho()">Limpar Carrinho</button>
+  </div>
+
+  <script src="assets/js/carrinho.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      const container = document.getElementById("carrinho-itens");
+      const totalElement = document.getElementById("total");
+      let total = 0;
+
+      if (carrinho.length === 0) {
+        container.innerHTML = "<p>Seu carrinho está vazio.</p>";
+      } else {
+        carrinho.forEach(produto => {
+          const subtotal = produto.preco * produto.quantidade;
+          total += subtotal;
+
+          const item = document.createElement("div");
+          item.classList.add("produto");
+          item.innerHTML = `
+            <p><strong>${produto.nome}</strong></p>
+            <p>Preço: R$ ${produto.preco.toFixed(2)} x ${produto.quantidade}</p>
+            <p>Subtotal: R$ ${subtotal.toFixed(2)}</p>
+          `;
+          container.appendChild(item);
+        });
+
+        totalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
+      }
+    });
+
+    function limparCarrinho() {
+      localStorage.removeItem("carrinho");
+      location.reload();
+    }
+  </script>
+</body>
+</html>
